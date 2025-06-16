@@ -1,0 +1,107 @@
+.landingPage {
+  margin-left: 250px;
+  padding: 2rem;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  transition: margin-left 0.3s ease, background 0.3s ease;
+}
+
+body.sidebar-collapsed .landingPage {
+  margin-left: 80px;
+}
+
+body.dark-mode {
+  background: linear-gradient(120deg, #1e1e2f 0%, #2e2e3e 100%);
+  color: #e4e4e7;
+}
+
+body.dark-mode .landingPage {
+  background: linear-gradient(120deg, #1e1e2f 0%, #2e2e3e 100%);
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #2d1e4a;
+}
+
+.logoHighlight {
+  color: #6c2eb7;
+}
+
+.darkModeBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ctaButton {
+  padding: 1rem 2rem;
+  background: #6c2eb7;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(140, 82, 255, 0.2);
+}
+
+body.dark-mode .ctaButton {
+  background: #4b4b5f;
+  color: #c4b5fd;
+}
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 24px;
+}
+
+body.dark-mode .heroSection {
+  background: linear-gradient(120deg, #3b3b4f 0%, #5b5b6f 100%);
+}
+
+.heroContent {
+  flex: 1;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #2d1e4a;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.featuresSection,
+.testimonialsSection,
+.ctaSection {
+  margin-top: 4rem;
+}
+
+.featuresGrid,
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+body.dark-mode .featuresSection,
+body.dark-mode .testimonialsSection,
+body.dark-mode .ctaSection {
+  background: #2e2e3e;
+  color: #e4e4e7;
+}

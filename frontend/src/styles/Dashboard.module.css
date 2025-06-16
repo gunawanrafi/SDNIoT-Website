@@ -1,0 +1,110 @@
+.dashboardPage {
+  margin-left: 250px; /* Default margin for full sidebar */
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease, background 0.3s ease; /* Smooth transition for sidebar changes */
+}
+
+body.sidebar-collapsed .dashboardPage {
+  margin-left: 80px; /* Adjust margin when sidebar is collapsed */
+}
+
+body.dark-mode .dashboardPage {
+  background: #1e1e2f;
+}
+
+.dashboardTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 2rem;
+}
+
+.summarySection {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summaryCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+body.dark-mode .summaryCard {
+  background: #2e2e3e;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.summaryIcon {
+  font-size: 2rem;
+}
+
+.summaryTitle {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.sensorSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.notificationList {
+  margin-bottom: 2rem;
+}
+
+.notificationItem {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Grafana Section */
+.grafanaSection {
+  margin-top: 2rem;
+}
+
+.grafanaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.grafanaBox {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.grafanaBox h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.grafanaEmbed {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: none;
+}

@@ -1,0 +1,33 @@
+.sensorCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.sensorName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.sensorStatus {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.online {
+  color: #10b981;
+}
+
+.offline {
+  color: #ef4444;
+}
+
+.sensorDetails p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0.3rem 0;
+}

@@ -1,0 +1,33 @@
+.teamProfilePage {
+  margin-left: 250px; /* Default margin for full sidebar */
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  transition: margin-left 0.3s ease;
+}
+
+body.sidebar-collapsed .teamProfilePage {
+  margin-left: 80px; /* Adjust margin when sidebar is collapsed */
+}
+
+.teamTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.teamSubtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
